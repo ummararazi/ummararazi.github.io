@@ -6,7 +6,7 @@
 <meta property="og:title" content="Dr. Ummara Razi">
 <title>Dr. Ummara Razi</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Dr. Ummara Razi, PhD economist in energy economics and sustainable finance. Assistant Professor at Bahçeşehir Cyprus University and Non-Resident Research Fellow at UNITEN's Institute of Energy Policy and Research.">
+<meta name="description" content="Dr. Ummara Razi, PhD economist in energy economics and sustainable finance. Assistant Professor at Bahçeşehir Cyprus University (Center for Sustainable Development and Green Innovation Research) and Non-Resident Research Fellow at UNITEN's Institute of Energy Policy and Research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -104,6 +104,25 @@ section{padding-block:72px 8px;scroll-margin-top:56px}
 .next{margin-top:28px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:10px;display:grid;grid-template-columns:200px 1fr;gap:24px}
 .next h3{font-size:1.15rem}
 .next p{color:var(--muted);font-size:.95rem}
+
+
+/* Methods */
+.mtable{border-top:2px solid var(--fg)}
+.mrow{display:grid;grid-template-columns:1.05fr 1.25fr .9fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.mrow.head{padding:10px 0;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mrow h3{font-size:1.12rem;line-height:1.25}
+.mrow .tech{font-family:var(--f-data);font-size:.74rem;color:var(--muted);margin-top:6px;line-height:1.5}
+.mrow .q{font-size:.93rem}
+.mrow .ev{font-size:.84rem;color:var(--muted);font-style:italic}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.mcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.mcard h3{font-size:1.1rem}
+.mcard ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.88rem}
+.mcard li{padding-left:14px;position:relative}
+.mcard li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:var(--accent)}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tools span{font-family:var(--f-data);font-size:.76rem;padding:4px 10px;border:1px solid var(--line);border-radius:4px}
+@media (max-width:960px){.mgrid{grid-template-columns:1fr}.mrow{grid-template-columns:1fr;gap:6px}.mrow.head{display:none}}
 
 /* Publications */
 .pub-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
@@ -277,7 +296,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
       <h1 style="margin-top:12px">Dr. Ummara <em>Razi</em></h1>
       <p class="role">I study how energy markets, financial systems and climate policy interact, and whether green finance and transition policies deliver the outcomes they promise.</p>
       <div class="affil">
-        <div><span class="k">Faculty</span><p><b>Assistant Professor &amp; Research Fellow</b>, Bahçeşehir Cyprus University</p></div>
+        <div><span class="k">Faculty</span><p><b>Assistant Professor &amp; Research Fellow</b>, Center for Sustainable Development and Green Innovation Research, Bahçeşehir Cyprus University, Nicosia, TRNC, Mersin 10, Turkey</p></div>
         <div><span class="k">Fellowship</span><p><b>Non-Resident Research Fellow</b>, Institute of Energy Policy and Research (IEPRe), UNITEN Business School, Universiti Tenaga Nasional, Malaysia</p></div>
         <div><span class="k">PhD</span><p><b>Energy Economics and Finance</b>, Sunway Business School, Sunway University, Malaysia (2026)</p></div>
       </div>
@@ -297,13 +316,13 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
     <div class="metric"><div class="n">37</div><div class="l">in Scopus Q1 journals</div></div>
     <div class="metric"><div class="n">1,637</div><div class="l">citations, Google Scholar</div></div>
     <div class="metric"><div class="n">20</div><div class="l">h-index · i10-index 26</div></div>
-    <div class="metric"><div class="n">90</div><div class="l">verified reviews for 25 journals</div></div>
+    <div class="metric"><div class="n">200+</div><div class="l">peer reviews, recorded on ORCID</div></div>
   </div>
 </div>
 
 <nav class="index" aria-label="Sections">
   <div class="wrap">
-    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#recognition">Recognition</a><a href="#talks">Talks</a><a href="#teaching">Teaching &amp; Service</a><a href="#training">Training</a><a href="#career">Career</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#methods">Methods</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#recognition">Recognition</a><a href="#talks">Talks</a><a href="#teaching">Teaching &amp; Service</a><a href="#training">Training</a><a href="#career">Career</a><a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -314,9 +333,6 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
     <div>
       <p class="lede">My work sits where energy economics, environmental economics and finance meet. I ask practical questions: who bears energy-price shocks, how risk travels between energy and financial markets, and which financial instruments actually move investment toward clean energy.</p>
       <p>Before research, I spent eight years in retail and trade banking in Karachi, including foreign-trade management at Summit Bank. That background shapes how I model pricing and financing decisions as institutions and households actually make them. I have led a policy-oriented research grant from proposal to dissemination as Principal Investigator for the CAREC Institute, and I now teach economics and finance at Bahçeşehir Cyprus University.</p>
-      <div class="methods" aria-label="Methods and software">
-        <span>Panel econometrics</span><span>Quantile-on-quantile</span><span>Wavelet coherence</span><span>Connectedness &amp; spillovers</span><span>SEM / SmartPLS</span><span>Stata</span><span>R</span><span>MATLAB</span><span>EViews</span><span>Python</span>
-      </div>
     </div>
     <div class="facts">
       <div><span>PhD</span><p>Business (Energy Economics &amp; Finance), Sunway University, Malaysia. AACSB-accredited. Awarded May 2026</p></div>
@@ -353,6 +369,28 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
     <div class="next">
       <div><div class="eyebrow">Emerging agenda</div><h3 style="margin-top:6px">Digital transformation and AI</h3></div>
       <p>I am extending this work to how AI, digitalisation and financial technology affect productivity, resource efficiency, investment and environmental outcomes, including the electricity demands of AI infrastructure.</p>
+    </div>
+  </div>
+</section>
+
+<section id="methods" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Methods &amp; skills</div><div><h2>Policy-relevant empirical methods</h2><p style="margin-top:8px">Each method is matched to the policy question it answers and to published work where I have applied it.</p></div></div>
+  <div class="body-col">
+    <div class="mtable" role="table" aria-label="Methods and their policy uses">
+      <div class="mrow head" role="row"><span role="columnheader">Method</span><span role="columnheader">Policy question it answers</span><span role="columnheader">Applied in</span></div>
+      <div class="mrow" role="row"><div><h3>Quantile and quantile-on-quantile regression</h3><div class="tech">QR · QQR · multivariate QQR · quantile kernel regression</div></div><p class="q">Do policies work differently for the most vulnerable or the most polluting? Effects across the whole distribution, not only the average case.</p><p class="ev">Energy poverty in Spain (Energy Economics, 2025); energy patents and emissions (Clean Tech. &amp; Env. Policy, 2026)</p></div>
+      <div class="mrow" role="row"><div><h3>Wavelet and time-frequency analysis</h3><div class="tech">Wavelet coherence · Morlet wavelets · wavelet quantile correlation · local multiple correlation</div></div><p class="q">Is a policy or price shock a short-run disturbance or a long-run structural shift? Which horizon should policy target?</p><p class="ev">Energy prices and exchange rates (Energy, 2025); carbon neutrality in China (Prog. Nuclear Energy, 2024)</p></div>
+      <div class="mrow" role="row"><div><h3>Connectedness and spillover models</h3><div class="tech">Time-varying connectedness · contagion · extreme-quantile spillovers</div></div><p class="q">How do shocks spread between energy, financial and currency markets, and where should regulators watch for systemic risk?</p><p class="ev">European energy markets (Applied Energy, 2025); Evergrande contagion (IREF, 2025); geopolitical risk (IRFA, 2025)</p></div>
+      <div class="mrow" role="row"><div><h3>Panel econometrics</h3><div class="tech">Fixed/random effects · dynamic panels · nonlinear and threshold models · cross-country panels</div></div><p class="q">Which institutional, financial and technology conditions drive green growth and resource efficiency across countries?</p><p class="ev">Governance and SDG 3 (Sustainable Development, 2026); outward FDI and green energy (IREF, 2026)</p></div>
+      <div class="mrow" role="row"><div><h3>Time-series causality</h3><div class="tech">Bootstrap rolling-window causality · NARDL · QARDL · asymmetric models</div></div><p class="q">Did a relationship change after a policy, crisis or regime shift? Are responses to increases and decreases symmetric?</p><p class="ev">Green innovation and the UK energy transition (Sustainable Development, 2023, Wiley Top Cited)</p></div>
+      <div class="mrow" role="row"><div><h3>Policy assessment and scenario analysis</h3><div class="tech">Policy design review · scenario and simulation analysis · comparative country case studies</div></div><p class="q">What are the barriers to adopting a market-based instrument, and which pathway fits a country's institutions?</p><p class="ev">Emission trading in Kazakhstan and China (CAREC Institute, 2025)</p></div>
+      <div class="mrow" role="row"><div><h3>Survey and firm-level modelling</h3><div class="tech">SEM · SmartPLS · SPSS</div></div><p class="q">What drives firm and household adoption of green finance, fintech and sustainable practices?</p><p class="ev">Firm- and survey-level studies</p></div>
+      <div class="mrow" role="row"><div><h3>Bibliometric and systematic review</h3><div class="tech">Science mapping · co-citation and keyword networks</div></div><p class="q">Where does the evidence base stand, and what research gaps should funders and policymakers prioritise?</p><p class="ev">Energy price volatility and green finance (Energy, 2024)</p></div>
+    </div>
+    <div class="mgrid">
+      <div class="mcard"><h3>Data</h3><ul><li>Large socioeconomic, energy, financial and environmental panels</li><li>High-frequency energy, commodity, currency and stock market prices</li><li>Merging, cleaning and harmonising cross-country data</li></ul></div>
+      <div class="mcard"><h3>Research leadership</h3><ul><li>Principal Investigator, CAREC Institute grant, from proposal to dissemination</li><li>Policy reports and forum presentations for ADB-linked audiences</li><li>200+ peer reviews for SSCI/SCI journals (ORCID)</li></ul></div>
+      <div class="mcard"><h3>Software</h3><div class="tools"><span>Stata</span><span>R</span><span>MATLAB</span><span>EViews</span><span>Python</span><span>SmartPLS</span><span>SPSS</span></div></div>
     </div>
   </div>
 </section>
@@ -451,7 +489,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
     </div>
     <div class="panel">
       <h3>Peer review</h3>
-      <p class="sub">90 completed reviews for 25 journals, Jan 2022 to Sep 2026. Verified review record.</p>
+      <p class="sub">200+ peer reviews recorded on ORCID for SSCI/SCI journals. The breakdown below covers 90 reviews for 25 journals in one verified review record (Jan 2022 to Sep 2026).</p>
       <ul class="journals" id="journals"></ul>
       <p class="note">Also a recognised reviewer for Applied Energy, Energy Economics, Journal of Environmental Management and other Elsevier journals.</p>
     </div>
@@ -475,7 +513,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
       <h3>Academic</h3>
       <ol>
         <li><span class="yr">2026–</span><p>Non-Resident Research Fellow<span>Institute of Energy Policy and Research, UNITEN, Malaysia</span></p></li>
-        <li><span class="yr">2025–</span><p>Assistant Professor &amp; Research Fellow (remote)<span>Bahçeşehir Cyprus University</span></p></li>
+        <li><span class="yr">2025–</span><p>Assistant Professor &amp; Research Fellow (remote)<span>Center for Sustainable Development and Green Innovation Research, Bahçeşehir Cyprus University, Nicosia, TRNC, Mersin 10, Turkey</span></p></li>
         <li><span class="yr">2023–2025</span><p>Graduate Research Assistant<span>Sunway University, Malaysia (FRGS project)</span></p></li>
         <li><span class="yr">2022–2026</span><p>Lecturer &amp; Research Associate<span>ILMA University, Karachi</span></p></li>
       </ol>
@@ -517,6 +555,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
         <a href="https://www.linkedin.com/in/ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="clabel">Affiliation</div>
+      <p class="addr">Center for Sustainable Development and Green Innovation Research, Bahçeşehir Cyprus University, Nicosia, TRNC, Mersin 10, Turkey</p>
       <p class="addr">Institute of Energy Policy and Research, UNITEN Business School, Universiti Tenaga Nasional, 43000 Kajang, Malaysia</p>
     </div>
   </div>
@@ -526,6 +565,8 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
 <dialog class="lb" id="lb" aria-label="Image viewer"><button type="button" id="lb-close">Close</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
 
 <script>
+const C={"tranpol": 0, "sd.71505": 0, "techfore": 15, "esr": 2, "energy.2026": 4, "eap": 7, "iref.2026": 2, "igd": 3, "261438604": 0, "15567249": 0, "bse": 0, "s10098": 0, "iref.2025": 7, "energy.2025": 21, "s10614": 10, "s13021": 8, "251385237": 5, "irfa": 70, "apenergy": 10, "eneco": 11, "rser": 17, "s40822": 9, "s10668": 7, "pnucene": 36, "jenvman.2024": 38, "s00477": 29, "s11356-024": 28, "sftr": 27, "resourpol.2023": 61, "energy.2024": 38, "gj.": 20, "sd.2399": 245, "s11356-023": 30, "heliyon": 24, "103180": 46, "102860": 151, "1941180": 68, "2026239": 49, "2004190": 81, "1930092": 71, "jenvman.2021": 305, "ldr": 0, "261488298": 0};
+const cites=d=>{for(const k in C)if(d.includes(k))return C[k];return 0};
 const P=[
 [2026,"Razi, U., Tiwari, S., Bourchid Abdelkader, S., Djafar Henni, M., & Doğan, B.","Navigating green growth: Insights from resource efficiency, eco-innovation, and digital transformation in the N-11 economies","Energy & Environment","10.1177/0958305X261488298","Q1"],
 [2026,"Cheng, J., Vasa, L., Elżbieta, W., Shahzad, U., & Razi, U.","Causal linkages between forestation, health issues, and sustainability dimensions in the United States and China: A climate resilience perspective","Land Degradation & Development","10.1002/ldr.70849","Q1"],
@@ -573,8 +614,6 @@ const P=[
 [2021,"Tao, R., Umar, M., Naseer, A., & Razi, U.","The dynamic effect of eco-innovation and environmental taxes on carbon neutrality target in emerging seven (E7) economies","Journal of Environmental Management","10.1016/j.jenvman.2021.113525","Q1"]
 ].map(r=>({c:cites(r[4]),y:r[0],a:r[1],t:r[2],j:r[3],doi:r[4],q:r[5],sel:!!r[6],first:r[1].startsWith("Razi, U.")}));
 
-const C={"tranpol": 0, "sd.71505": 0, "techfore": 15, "esr": 2, "energy.2026": 4, "eap": 7, "iref.2026": 2, "igd": 3, "261438604": 0, "15567249": 0, "bse": 0, "s10098": 0, "iref.2025": 7, "energy.2025": 21, "s10614": 10, "s13021": 8, "251385237": 5, "irfa": 70, "apenergy": 10, "eneco": 11, "rser": 17, "s40822": 9, "s10668": 7, "pnucene": 36, "jenvman.2024": 38, "s00477": 29, "s11356-024": 28, "sftr": 27, "resourpol.2023": 61, "energy.2024": 38, "gj.": 20, "sd.2399": 245, "s11356-023": 30, "heliyon": 24, "103180": 46, "102860": 151, "1941180": 68, "2026239": 49, "2004190": 81, "1930092": 71, "jenvman.2021": 305, "ldr": 0, "261488298": 0};
-const cites=d=>{for(const k in C)if(d.includes(k))return C[k];return 0};
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 let filter="sel", q="";
 function renderPubs(){
