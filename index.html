@@ -315,7 +315,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
   <div class="wrap">
     <div class="metric"><div class="n">44</div><div class="l">peer-reviewed articles</div></div>
     <div class="metric"><div class="n">37</div><div class="l">in Scopus Q1 journals</div></div>
-    <div class="metric"><div class="n">1,637</div><div class="l">citations, Google Scholar</div></div>
+    <div class="metric"><div class="n">1,600+</div><div class="l">citations, Google Scholar</div></div>
     <div class="metric"><div class="n">20</div><div class="l">h-index · i10-index 26</div></div>
     <div class="metric"><div class="n">200+</div><div class="l">peer reviews, recorded on ORCID</div></div>
   </div>
@@ -402,7 +402,6 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
       <div class="chips" role="group" aria-label="Filter publications">
         <button class="chip" id="f-sel" aria-pressed="true" data-f="sel">Selected</button>
         <button class="chip" id="f-all" aria-pressed="false" data-f="all">All</button>
-        <button class="chip" id="f-cited" aria-pressed="false" data-f="cited">Most cited</button>
         <button class="chip" id="f-first" aria-pressed="false" data-f="first">First author</button>
         <button class="chip" id="f-2026" aria-pressed="false" data-f="2026">2026</button>
         <button class="chip" id="f-2025" aria-pressed="false" data-f="2025">2025</button>
@@ -560,7 +559,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
     </div>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 Ummara Razi</span><span>Publications and citations from Google Scholar, 14 October 2026</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Ummara Razi</span><span>Publications from Google Scholar, October 2026</span></div></footer>
 
 <dialog class="lb" id="lb" aria-label="Image viewer"><button type="button" id="lb-close">Close</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
 
@@ -632,7 +631,7 @@ function renderPubs(){
   let html="",yr=null;
   rows.forEach(p=>{
     if(filter!=="cited"&&p.y!==yr){yr=p.y;html+=`<div class="pub-year">${yr}</div>`}
-    html+=`<article class="pub"><div style="min-width:0"><div class="t">${esc(p.t)}</div><div class="a">${esc(p.a).replace("Razi, U.","<b>Razi, U.</b>")}</div><div class="j"><i>${esc(p.j)}</i>${filter==="cited"?` · ${p.y}`:''}</div></div><div class="side">${p.sel?'<span class="badge sel">Selected</span>':''}${p.c?`<span class="badge">Cited by ${p.c}</span>`:''}<span class="badge">Scopus ${p.q}</span><a class="doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a></div></article>`;
+    html+=`<article class="pub"><div style="min-width:0"><div class="t">${esc(p.t)}</div><div class="a">${esc(p.a).replace("Razi, U.","<b>Razi, U.</b>")}</div><div class="j"><i>${esc(p.j)}</i>${filter==="cited"?` · ${p.y}`:''}</div></div><div class="side">${p.sel?'<span class="badge sel">Selected</span>':''}<span class="badge">Scopus ${p.q}</span><a class="doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a></div></article>`;
   });
   list.innerHTML=html;
 }
