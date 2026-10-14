@@ -120,9 +120,10 @@ section{padding-block:72px 8px;scroll-margin-top:56px}
 .mcard ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.88rem}
 .mcard li{padding-left:14px;position:relative}
 .mcard li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:var(--accent)}
+.mgrid-m{grid-template-columns:repeat(2,1fr);margin-top:0}
 .tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .tools span{font-family:var(--f-data);font-size:.76rem;padding:4px 10px;border:1px solid var(--line);border-radius:4px}
-@media (max-width:960px){.mgrid{grid-template-columns:1fr}.mrow{grid-template-columns:1fr;gap:6px}.mrow.head{display:none}}
+@media (max-width:960px){.mgrid,.mgrid-m{grid-template-columns:1fr}.mrow{grid-template-columns:1fr;gap:6px}.mrow.head{display:none}}
 
 /* Publications */
 .pub-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
@@ -304,7 +305,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
         <a href="https://scholar.google.com/citations?user=3RthPUsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57224398188" target="_blank" rel="noopener">Scopus</a>
         <a href="https://orcid.org/0000-0002-5981-5736" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://www.linkedin.com/in/ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dr-ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.researchgate.net/profile/Ummara-Razi" target="_blank" rel="noopener">ResearchGate</a>
       </div>
     </div>
@@ -374,18 +375,17 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
 </section>
 
 <section id="methods" class="wrap">
-  <div class="sec-head"><div class="eyebrow">Methods &amp; skills</div><div><h2>Policy-relevant empirical methods</h2><p style="margin-top:8px">Each method is matched to the policy question it answers and to published work where I have applied it.</p></div></div>
+  <div class="sec-head"><div class="eyebrow">Methods &amp; skills</div><h2>Policy-relevant empirical methods</h2></div>
   <div class="body-col">
-    <div class="mtable" role="table" aria-label="Methods and their policy uses">
-      <div class="mrow head" role="row"><span role="columnheader">Method</span><span role="columnheader">Policy question it answers</span><span role="columnheader">Applied in</span></div>
-      <div class="mrow" role="row"><div><h3>Quantile and quantile-on-quantile regression</h3><div class="tech">QR · QQR · multivariate QQR · quantile kernel regression</div></div><p class="q">Do policies work differently for the most vulnerable or the most polluting? Effects across the whole distribution, not only the average case.</p><p class="ev">Energy poverty in Spain (Energy Economics, 2025); energy patents and emissions (Clean Tech. &amp; Env. Policy, 2026)</p></div>
-      <div class="mrow" role="row"><div><h3>Wavelet and time-frequency analysis</h3><div class="tech">Wavelet coherence · Morlet wavelets · wavelet quantile correlation · local multiple correlation</div></div><p class="q">Is a policy or price shock a short-run disturbance or a long-run structural shift? Which horizon should policy target?</p><p class="ev">Energy prices and exchange rates (Energy, 2025); carbon neutrality in China (Prog. Nuclear Energy, 2024)</p></div>
-      <div class="mrow" role="row"><div><h3>Connectedness and spillover models</h3><div class="tech">Time-varying connectedness · contagion · extreme-quantile spillovers</div></div><p class="q">How do shocks spread between energy, financial and currency markets, and where should regulators watch for systemic risk?</p><p class="ev">European energy markets (Applied Energy, 2025); Evergrande contagion (IREF, 2025); geopolitical risk (IRFA, 2025)</p></div>
-      <div class="mrow" role="row"><div><h3>Panel econometrics</h3><div class="tech">Fixed/random effects · dynamic panels · nonlinear and threshold models · cross-country panels</div></div><p class="q">Which institutional, financial and technology conditions drive green growth and resource efficiency across countries?</p><p class="ev">Governance and SDG 3 (Sustainable Development, 2026); outward FDI and green energy (IREF, 2026)</p></div>
-      <div class="mrow" role="row"><div><h3>Time-series causality</h3><div class="tech">Bootstrap rolling-window causality · NARDL · QARDL · asymmetric models</div></div><p class="q">Did a relationship change after a policy, crisis or regime shift? Are responses to increases and decreases symmetric?</p><p class="ev">Green innovation and the UK energy transition (Sustainable Development, 2023, Wiley Top Cited)</p></div>
-      <div class="mrow" role="row"><div><h3>Policy assessment and scenario analysis</h3><div class="tech">Policy design review · scenario and simulation analysis · comparative country case studies</div></div><p class="q">What are the barriers to adopting a market-based instrument, and which pathway fits a country's institutions?</p><p class="ev">Emission trading in Kazakhstan and China (CAREC Institute, 2025)</p></div>
-      <div class="mrow" role="row"><div><h3>Survey and firm-level modelling</h3><div class="tech">SEM · SmartPLS · SPSS</div></div><p class="q">What drives firm and household adoption of green finance, fintech and sustainable practices?</p><p class="ev">Firm- and survey-level studies</p></div>
-      <div class="mrow" role="row"><div><h3>Bibliometric and systematic review</h3><div class="tech">Science mapping · co-citation and keyword networks</div></div><p class="q">Where does the evidence base stand, and what research gaps should funders and policymakers prioritise?</p><p class="ev">Energy price volatility and green finance (Energy, 2024)</p></div>
+    <div class="mgrid mgrid-m">
+      <div class="mcard"><h3>Quantile methods</h3><div class="tools"><span>Quantile regression</span><span>Quantile-on-quantile</span><span>Multivariate QQR</span><span>Quantile kernel regression</span></div></div>
+      <div class="mcard"><h3>Wavelet and time-frequency analysis</h3><div class="tools"><span>Wavelet coherence</span><span>Morlet wavelets</span><span>Wavelet quantile correlation</span><span>Local multiple correlation</span></div></div>
+      <div class="mcard"><h3>Connectedness and spillover models</h3><div class="tools"><span>Time-varying connectedness</span><span>Contagion analysis</span><span>Extreme-quantile spillovers</span></div></div>
+      <div class="mcard"><h3>Panel econometrics</h3><div class="tools"><span>Fixed and random effects</span><span>Dynamic panels</span><span>Nonlinear and threshold models</span></div></div>
+      <div class="mcard"><h3>Time-series causality</h3><div class="tools"><span>Bootstrap rolling-window causality</span><span>NARDL</span><span>QARDL</span><span>Asymmetric models</span></div></div>
+      <div class="mcard"><h3>Policy assessment</h3><div class="tools"><span>Policy design review</span><span>Scenario and simulation analysis</span><span>Comparative country studies</span></div></div>
+      <div class="mcard"><h3>Survey and firm-level modelling</h3><div class="tools"><span>SEM</span><span>SmartPLS</span><span>SPSS</span></div></div>
+      <div class="mcard"><h3>Bibliometric and systematic review</h3><div class="tools"><span>Science mapping</span><span>Co-citation and keyword networks</span></div></div>
     </div>
     <div class="mgrid">
       <div class="mcard"><h3>Data</h3><ul><li>Large socioeconomic, energy, financial and environmental panels</li><li>High-frequency energy, commodity, currency and stock market prices</li><li>Merging, cleaning and harmonising cross-country data</li></ul></div>
@@ -552,7 +552,7 @@ dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));ri
         <a href="https://scholar.google.com/citations?user=3RthPUsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57224398188" target="_blank" rel="noopener">Scopus 57224398188</a>
         <a href="https://orcid.org/0000-0002-5981-5736" target="_blank" rel="noopener">ORCID 0000-0002-5981-5736</a>
-        <a href="https://www.linkedin.com/in/ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dr-ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="clabel">Affiliation</div>
       <p class="addr">Center for Sustainable Development and Green Innovation Research, Bahçeşehir Cyprus University, Nicosia, TRNC, Mersin 10, Turkey</p>
