@@ -1,0 +1,631 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Dr. Ummara Razi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Dr. Ummara Razi, PhD economist in energy economics and sustainable finance. Assistant Professor at Bahçeşehir Cyprus University and Non-Resident Research Fellow at UNITEN's Institute of Energy Policy and Research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a navy masthead band holding the portrait and credentials, then a single reading column of sections with a sticky index bar. */
+:root{
+  --bg:#F4F5F8; --surface:#FFFFFF; --fg:#18213A; --muted:#5B6479; --line:#DDE1E9;
+  --accent:#9A7A45; --accent-soft:#F1EADC;
+  --band:#1A2642; --band-2:#22305270; --band-fg:#EEF0F5; --band-muted:#B5BDD0; --gold:#CDAE74;
+  --bar-me:#1A2642; --bar-avg:#C3C9D6;
+  --f-display:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --f-data:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1426; --surface:#161D33; --fg:#E7EAF1; --muted:#9CA5BB; --line:#283252;
+  --accent:#D3B57C; --accent-soft:#2A2A2E;
+  --band:#121A30; --band-fg:#EEF0F5; --band-muted:#AEB7CB; --gold:#D3B57C;
+  --bar-me:#D3B57C; --bar-avg:#46506E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1426; --surface:#161D33; --fg:#E7EAF1; --muted:#9CA5BB; --line:#283252;
+  --accent:#D3B57C; --accent-soft:#2A2A2E;
+  --band:#121A30; --band-fg:#EEF0F5; --band-muted:#AEB7CB; --gold:#D3B57C;
+  --bar-me:#D3B57C; --bar-avg:#46506E; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-body);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* Masthead */
+.mast{background:var(--band);color:var(--band-fg);position:relative;overflow:hidden}
+.mast::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 15% 40%,#2C3C66 0%,transparent 70%);opacity:.55;pointer-events:none}
+.mast .wrap{position:relative;padding-block:56px 44px;display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+.portrait{width:clamp(180px,22vw,260px);height:auto;aspect-ratio:1;max-width:100%;display:block}
+.mast h1{font-size:clamp(2.4rem,5.2vw,3.9rem);line-height:1.04;font-weight:400}
+.mast h1 em{font-style:italic;color:var(--gold)}
+.mast .role{margin-top:14px;font-size:1.08rem;color:var(--band-fg);max-width:58ch}
+.affil{margin-top:22px;display:grid;gap:10px;padding-top:20px;border-top:1px solid #ffffff22}
+.affil div{display:grid;grid-template-columns:118px 1fr;gap:14px;font-size:.93rem;color:var(--band-muted)}
+.affil b{font-weight:500;color:var(--band-fg)}
+.affil span.k{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);padding-top:3px}
+.profiles{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.profiles a{font-size:.84rem;text-decoration:none;padding:7px 14px;border:1px solid #ffffff30;border-radius:999px;color:var(--band-fg);transition:border-color .2s,background .2s}
+.profiles a:hover{border-color:var(--gold);background:#ffffff0d}
+
+.metrics{background:var(--band);border-top:1px solid #ffffff18;color:var(--band-fg)}
+.metrics .wrap{display:grid;grid-template-columns:repeat(5,1fr);padding-block:22px}
+.metric{padding:4px 18px;border-left:1px solid #ffffff1c}
+.metric:first-child{border-left:0;padding-left:0}
+.metric .n{font-family:var(--f-display);font-size:2rem;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--band-fg)}
+.metric .l{font-size:.78rem;color:var(--band-muted);margin-top:2px}
+
+/* Index bar */
+nav.index{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.index .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:6px}
+nav.index .wrap::-webkit-scrollbar{display:none}
+nav.index a{flex:none;text-decoration:none;font-size:.86rem;color:var(--muted);padding:8px 12px;border-radius:6px}
+nav.index a:hover,nav.index a.on{color:var(--fg);background:var(--accent-soft)}
+
+/* Sections */
+section{padding-block:72px 8px;scroll-margin-top:56px}
+.sec-head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:32px;align-items:baseline}
+.sec-head h2{font-size:clamp(1.8rem,3.2vw,2.4rem)}
+.sec-head p{color:var(--muted);max-width:62ch}
+.body-col{margin-left:252px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px}
+.about-grid .lede{font-family:var(--f-display);font-size:1.32rem;line-height:1.5}
+.about-grid .lede + p{margin-top:16px;color:var(--muted)}
+.facts{display:grid;gap:0;border-top:1px solid var(--line)}
+.facts div{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.facts span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.methods{display:flex;flex-wrap:wrap;gap:6px;margin-top:24px}
+.methods span{font-family:var(--f-data);font-size:.76rem;padding:4px 10px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+
+/* Research streams */
+.streams{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--fg)}
+.stream{padding:24px 24px 28px 0;border-right:1px solid var(--line)}
+.stream + .stream{padding-left:24px}
+.stream:last-child{border-right:0}
+.stream .tag{font-family:var(--f-data);font-size:.74rem;color:var(--accent)}
+.stream h3{font-size:1.38rem;margin-top:8px;line-height:1.2}
+.stream p{margin-top:12px;color:var(--muted);font-size:.95rem}
+.stream ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.86rem}
+.stream li{padding-left:14px;position:relative}
+.stream li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:1px;background:var(--accent)}
+.next{margin-top:28px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:10px;display:grid;grid-template-columns:200px 1fr;gap:24px}
+.next h3{font-size:1.15rem}
+.next p{color:var(--muted);font-size:.95rem}
+
+/* Publications */
+.pub-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 .84rem var(--f-body);padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.search{flex:1 1 220px;min-width:0;font:inherit;font-size:.92rem;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.pub-count{font-family:var(--f-data);font-size:.78rem;color:var(--muted);margin-bottom:8px}
+.pub-year{font-family:var(--f-display);font-size:1.5rem;padding:22px 0 8px;border-bottom:1px solid var(--line)}
+.pub{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.pub .t{font-family:var(--f-display);font-size:1.12rem;line-height:1.35}
+.pub .a{font-size:.88rem;color:var(--muted);margin-top:4px}
+.pub .a b{color:var(--fg);font-weight:600}
+.pub .j{font-size:.88rem;margin-top:2px}
+.pub .j i{font-style:italic}
+.pub .side{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.badge{font-family:var(--f-data);font-size:.7rem;padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.badge.sel{border-color:var(--accent);color:var(--accent)}
+.doi{font-family:var(--f-data);font-size:.74rem;color:var(--accent);text-decoration:none;white-space:nowrap}
+.doi:hover{text-decoration:underline}
+.empty{padding:28px 0;color:var(--muted)}
+
+/* Grants */
+.grant{display:grid;grid-template-columns:240px 1fr;gap:36px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.grant img{width:100%;height:100%;object-fit:cover;display:block}
+.grant .gbody{padding:30px 32px 30px 0}
+.grant h3{font-size:1.55rem;line-height:1.2;margin-top:8px}
+.grant dl{display:grid;grid-template-columns:110px 1fr;gap:8px 16px;margin:20px 0 0;font-size:.92rem}
+.grant dt{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.grant dd{margin:0}
+.grant2{margin-top:16px;padding:22px 28px;border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:240px 1fr;gap:36px}
+.grant2 h3{font-size:1.2rem}
+.grant2 p{color:var(--muted);font-size:.93rem;margin-top:6px}
+
+/* Recognition */
+.awards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.award{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.award button{all:unset;cursor:zoom-in;display:block;aspect-ratio:4/3;background:var(--accent-soft);overflow:hidden}
+.award button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.award img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .5s}
+.award button:hover img{transform:scale(1.03)}
+.award .cap{padding:16px 18px 18px}
+.award .yr{font-family:var(--f-data);font-size:.74rem;color:var(--accent)}
+.award h3{font-size:1.15rem;margin-top:4px;line-height:1.25}
+.award p{font-size:.88rem;color:var(--muted);margin-top:6px}
+
+/* Talks */
+.talks{display:grid;grid-template-columns:1.5fr 1fr;gap:20px}
+.talk-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.talk-photos button{all:unset;cursor:zoom-in;border-radius:10px;overflow:hidden;display:block;aspect-ratio:4/3;background:var(--accent-soft)}
+.talk-photos button.wide{grid-column:span 2;aspect-ratio:16/9}
+.talk-photos button:focus-visible{outline:2px solid var(--accent)}
+.talk-photos img{width:100%;height:100%;object-fit:cover;display:block}
+.timeline{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+.timeline li{padding:0 0 22px 22px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-4px;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.timeline .yr{font-family:var(--f-data);font-size:.74rem;color:var(--accent)}
+.timeline b{display:block;font-weight:500;line-height:1.35}
+.timeline span{font-size:.86rem;color:var(--muted)}
+
+/* Service + teaching */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 28px}
+.panel h3{font-size:1.3rem}
+.panel .sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+.journals{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:7px}
+.journals li{display:grid;grid-template-columns:1fr 34px;gap:12px;align-items:center;font-size:.88rem}
+.journals .bar{grid-column:1/-1;height:3px;background:var(--line);border-radius:2px;margin-top:-3px}
+.journals .bar i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.journals .c{font-family:var(--f-data);text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.note{font-size:.8rem;color:var(--muted);margin-top:14px}
+.evals{margin-top:18px;display:grid;gap:20px}
+.eval h4{margin:0;font:600 .92rem var(--f-body)}
+.eval .meta{font-size:.8rem;color:var(--muted)}
+.erow{display:grid;grid-template-columns:118px 1fr 40px;gap:10px;align-items:center;font-size:.82rem;margin-top:8px}
+.erow .track{height:10px;background:var(--bg);border-radius:3px;overflow:hidden}
+.erow .fill{height:100%;border-radius:3px}
+.erow .v{font-family:var(--f-data);text-align:right;font-variant-numeric:tabular-nums}
+.courses{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+.courses b{color:var(--fg);font-weight:500}
+
+/* Training */
+.train{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.train div{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.train div:nth-child(odd){padding-right:28px}
+.train div:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+.train .yr{font-family:var(--f-data);font-size:.78rem;color:var(--accent);padding-top:2px}
+.train b{font-weight:500;display:block;line-height:1.35}
+.train span{font-size:.85rem;color:var(--muted)}
+
+/* Career */
+.career{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.career h3{font-size:1.2rem;margin-bottom:10px}
+.career ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.career li{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.career .yr{font-family:var(--f-data);font-size:.76rem;color:var(--muted);padding-top:2px}
+.career span{color:var(--muted);font-size:.85rem;display:block}
+
+/* Contact */
+.contact{margin-top:72px;background:var(--band);color:var(--band-fg)}
+.contact .wrap{padding-block:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+.contact h2{font-size:clamp(2rem,3.6vw,2.8rem);font-weight:400}
+.contact h2 em{color:var(--gold)}
+.contact p{color:var(--band-muted);margin-top:14px;max-width:52ch}
+.open{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:8px}
+.open li{padding-left:18px;position:relative;color:var(--band-fg);font-size:.95rem}
+.open li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--gold)}
+.mail{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.mail code{font-family:var(--f-data);font-size:1rem;padding:10px 14px;border:1px solid #ffffff2a;border-radius:8px;user-select:all;overflow-wrap:anywhere}
+.mail button{font:500 .86rem var(--f-body);padding:10px 16px;border-radius:8px;border:0;background:var(--gold);color:#1A2642;cursor:pointer}
+.clabel{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-top:26px}
+.clabel:first-child{margin-top:0}
+.contact .profiles{margin-top:10px}
+.addr{font-size:.9rem;color:var(--band-muted);margin-top:8px;line-height:1.55}
+footer{background:var(--band);color:var(--band-muted);font-size:.8rem;border-top:1px solid #ffffff14}
+footer .wrap{padding-block:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* Lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh}
+dialog.lb::backdrop{background:#0b1020e6}
+dialog.lb img{display:block;max-width:100%;max-height:82vh;border-radius:8px;margin:0 auto}
+dialog.lb p{color:#E7EAF1;text-align:center;font-size:.9rem;margin-top:12px}
+dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));font:500 .9rem var(--f-body);background:#ffffff1a;color:#fff;border:1px solid #ffffff40;border-radius:999px;padding:8px 16px;cursor:pointer}
+
+/* Responsive */
+@media (max-width:960px){
+  .sec-head{grid-template-columns:1fr;gap:10px}
+  .body-col{margin-left:0}
+  .about-grid,.talks,.two,.career,.contact .wrap{grid-template-columns:1fr;gap:32px}
+  .streams{grid-template-columns:1fr}
+  .stream,.stream + .stream{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .awards{grid-template-columns:repeat(2,1fr)}
+  .metrics .wrap{grid-template-columns:repeat(3,1fr);row-gap:18px}
+  .metric:nth-child(4){border-left:0;padding-left:0}
+  .next,.grant2{grid-template-columns:1fr;gap:8px}
+}
+@media (max-width:700px){
+  .mast .wrap{grid-template-columns:1fr;gap:28px;padding-block:36px 32px}
+  .portrait{width:170px}
+  .affil div{grid-template-columns:1fr;gap:2px}
+  .metrics .wrap{grid-template-columns:repeat(2,1fr)}
+  .metric:nth-child(odd){border-left:0;padding-left:0}
+  .metric:nth-child(4){border-left:1px solid #ffffff1c;padding-left:18px}
+  .grant{grid-template-columns:1fr;gap:0}
+  .grant img{max-height:260px;object-position:top}
+  .grant .gbody{padding:24px 22px}
+  .grant dl{grid-template-columns:1fr;gap:2px}
+  .grant dd{margin-bottom:10px}
+  .awards{grid-template-columns:1fr}
+  .train{grid-template-columns:1fr}
+  .train div:nth-child(even){padding-left:0;border-left:0}
+  .train div:nth-child(odd){padding-right:0}
+  .pub{grid-template-columns:1fr}
+  .pub .side{flex-direction:row;align-items:center;flex-wrap:wrap}
+  .panel{padding:22px 20px}
+  .erow{grid-template-columns:96px 1fr 36px}
+  section{padding-block:56px 4px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<header class="mast" id="top">
+  <div class="wrap">
+    <img class="portrait" src="img/portrait.png" alt="Portrait of Dr. Ummara Razi" width="640" height="640">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">PhD Economist · Energy Economics &amp; Sustainable Finance</div>
+      <h1 style="margin-top:12px">Dr. Ummara <em>Razi</em></h1>
+      <p class="role">I study how energy markets, financial systems and climate policy interact, and whether green finance and transition policies deliver the outcomes they promise.</p>
+      <div class="affil">
+        <div><span class="k">Faculty</span><p><b>Assistant Professor &amp; Research Fellow</b>, Bahçeşehir Cyprus University</p></div>
+        <div><span class="k">Fellowship</span><p><b>Non-Resident Research Fellow</b>, Institute of Energy Policy and Research (IEPRe), UNITEN Business School, Universiti Tenaga Nasional, Malaysia</p></div>
+        <div><span class="k">PhD</span><p><b>Energy Economics and Finance</b>, Sunway Business School, Sunway University, Malaysia (2026)</p></div>
+      </div>
+      <div class="profiles">
+        <a href="https://scholar.google.com/citations?user=3RthPUsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57224398188" target="_blank" rel="noopener">Scopus</a>
+        <a href="https://orcid.org/0000-0002-5981-5736" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Ummara-Razi" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="metrics" aria-label="Research impact">
+  <div class="wrap">
+    <div class="metric"><div class="n">44</div><div class="l">peer-reviewed articles</div></div>
+    <div class="metric"><div class="n">37</div><div class="l">in Scopus Q1 journals</div></div>
+    <div class="metric"><div class="n">1,637</div><div class="l">citations, Google Scholar</div></div>
+    <div class="metric"><div class="n">20</div><div class="l">h-index · i10-index 26</div></div>
+    <div class="metric"><div class="n">90</div><div class="l">verified reviews for 25 journals</div></div>
+  </div>
+</div>
+
+<nav class="index" aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#recognition">Recognition</a><a href="#talks">Talks</a><a href="#teaching">Teaching &amp; Service</a><a href="#training">Training</a><a href="#career">Career</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section id="about" class="wrap">
+  <div class="sec-head"><div class="eyebrow">About</div><h2>Applied econometrics for energy and finance policy</h2></div>
+  <div class="body-col about-grid">
+    <div>
+      <p class="lede">My work sits where energy economics, environmental economics and finance meet. I ask practical questions: who bears energy-price shocks, how risk travels between energy and financial markets, and which financial instruments actually move investment toward clean energy.</p>
+      <p>Before research, I spent eight years in retail and trade banking in Karachi, including foreign-trade management at Summit Bank. That background shapes how I model pricing and financing decisions as institutions and households actually make them. I have led a policy-oriented research grant from proposal to dissemination as Principal Investigator for the CAREC Institute, and I now teach economics and finance at Bahçeşehir Cyprus University.</p>
+      <div class="methods" aria-label="Methods and software">
+        <span>Panel econometrics</span><span>Quantile-on-quantile</span><span>Wavelet coherence</span><span>Connectedness &amp; spillovers</span><span>SEM / SmartPLS</span><span>Stata</span><span>R</span><span>MATLAB</span><span>EViews</span><span>Python</span>
+      </div>
+    </div>
+    <div class="facts">
+      <div><span>PhD</span><p>Business (Energy Economics &amp; Finance), Sunway University, Malaysia. AACSB-accredited. Awarded May 2026</p></div>
+      <div><span>MPhil</span><p>Management Sciences (Economics &amp; Finance), Iqra University, 2019</p></div>
+      <div><span>MBA</span><p>Finance, Karachi University Business School, 2003</p></div>
+      <div><span>Current</span><p>Bahçeşehir Cyprus University (since Jan 2025) · IEPRe, UNITEN (since Sep 2026)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Research</div><h2>Three research streams</h2></div>
+  <div class="body-col">
+    <div class="streams">
+      <article class="stream">
+        <div class="tag">Stream 1</div>
+        <h3>Energy markets and economic resilience</h3>
+        <p>Energy-price volatility, market interconnectedness and shocks, and how they pass into exchange rates, equity and debt markets, and the wider economy.</p>
+        <ul><li>Energy price volatility and exchange-rate instability</li><li>European energy markets after COVID-19</li><li>Geopolitical risk and China's energy markets</li></ul>
+      </article>
+      <article class="stream">
+        <div class="tag">Stream 2</div>
+        <h3>Energy transition and sustainable finance</h3>
+        <p>Green bonds, clean-energy investment, fintech and digital currencies, and financial globalisation as channels that help or hold back sustainable investment.</p>
+        <ul><li>Green bonds and clean-energy investment</li><li>Fintech, digital currencies and renewable stocks</li><li>Energy poverty and affordability</li></ul>
+      </article>
+      <article class="stream">
+        <div class="tag">Stream 3</div>
+        <h3>Climate policy and sustainable development</h3>
+        <p>How institutional quality, policy design and market-based instruments shape environmental outcomes, including emission trading in Central Asia.</p>
+        <ul><li>Emission trading in CAREC economies</li><li>Governance, economic freedom and SDG 3</li><li>Circular economy and resource efficiency</li></ul>
+      </article>
+    </div>
+    <div class="next">
+      <div><div class="eyebrow">Emerging agenda</div><h3 style="margin-top:6px">Digital transformation and AI</h3></div>
+      <p>I am extending this work to how AI, digitalisation and financial technology affect productivity, resource efficiency, investment and environmental outcomes, including the electricity demands of AI infrastructure.</p>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Publications</div><div><h2>Peer-reviewed articles</h2><p style="margin-top:8px">44 journal articles, synced with Google Scholar. Venues include Energy Economics, Applied Energy, Energy, International Review of Financial Analysis, Technological Forecasting and Social Change, Business Strategy and the Environment and Renewable and Sustainable Energy Reviews.</p></div></div>
+  <div class="body-col">
+    <div class="pub-tools">
+      <div class="chips" role="group" aria-label="Filter publications">
+        <button class="chip" id="f-sel" aria-pressed="true" data-f="sel">Selected</button>
+        <button class="chip" id="f-all" aria-pressed="false" data-f="all">All</button>
+        <button class="chip" id="f-cited" aria-pressed="false" data-f="cited">Most cited</button>
+        <button class="chip" id="f-first" aria-pressed="false" data-f="first">First author</button>
+        <button class="chip" id="f-2026" aria-pressed="false" data-f="2026">2026</button>
+        <button class="chip" id="f-2025" aria-pressed="false" data-f="2025">2025</button>
+        <button class="chip" id="f-2024" aria-pressed="false" data-f="2024">2024</button>
+        <button class="chip" id="f-older" aria-pressed="false" data-f="older">2021–2023</button>
+      </div>
+      <input class="search" id="pub-search" type="search" placeholder="Search title, journal or co-author" aria-label="Search publications">
+    </div>
+    <div class="pub-count" id="pub-count" aria-live="polite"></div>
+    <div id="pub-list"></div>
+    <h3 style="font-size:1.3rem;margin-top:40px">Policy reports and book chapters</h3>
+    <article class="pub"><div style="min-width:0"><div class="t">Progress and challenges to implement emission trading mechanisms in CAREC nations: Insights from Kazakhstan and China</div><div class="a"><b>Razi, U.</b>, &amp; Ramzan, M. (2025)</div><div class="j"><i>CAREC Institute, CTTN Research Grants Program report</i></div></div><div class="side"><a class="doi" href="https://www.carecinstitute.org/wp-content/uploads/2025/02/ILMAU-20250311.pdf" target="_blank" rel="noopener">Report ↗</a></div></article>
+    <article class="pub"><div style="min-width:0"><div class="t">Green growth triumphs over brown growth despite energy price volatility</div><div class="a"><b>Razi, U.</b>, &amp; Cheong, C. W. H. (2024)</div><div class="j"><i>Prospects for Inclusive Green Growth and Sustainability in the CAREC Region</i>, CAREC Institute, pp. 280–316</div></div></article>
+  </div>
+</section>
+
+<section id="grants" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Grants &amp; projects</div><h2>Funded research</h2></div>
+  <div class="body-col">
+    <article class="grant">
+      <img src="img/cttn-report.jpg" alt="Cover of the CTTN Research Grants Program 2024 report on emission trading in CAREC nations">
+      <div class="gbody">
+        <div class="eyebrow">Principal Investigator · 2024</div>
+        <h3>Progress and Challenges to Implement Emission Trading Mechanisms in the CAREC Region: Insights from Kazakhstan and China</h3>
+        <dl>
+          <dt>Funder</dt><dd>CAREC Institute, CAREC Think Tank Network (CTTN) Research Grants Program, with the Asian Development Bank</dd>
+          <dt>Output</dt><dd>Policy research report (Razi &amp; Ramzan), presented at the 8th CAREC Think Tank Development Forum, Almaty, Kazakhstan, August 2024</dd>
+        </dl>
+      </div>
+    </article>
+    <div class="grant2">
+      <div><div class="eyebrow">Graduate Research Assistant · 2023–2025</div></div>
+      <div><h3>Developing a New Jump-Based Approach to Quantifying the Consequences of Energy Price Shocks to Economic Stability</h3>
+      <p>Fundamental Research Grant Scheme (FRGS), Ministry of Higher Education Malaysia, at Sunway University. I designed and ran the econometric modelling of energy-price volatility, which fed directly into peer-reviewed publications.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Recognition</div><h2>Awards</h2></div>
+  <div class="body-col awards">
+    <article class="award">
+      <button type="button" data-lb="img/best-paper.jpg" data-cap="Best Paper Award, 4th International Conference on Economics (ICE 2023)"><img src="img/best-paper.jpg" alt="Best Paper Award announcement, ICE 2023"></button>
+      <div class="cap"><div class="yr">2023</div><h3>Best Paper Award</h3><p>4th International Conference on Economics, Sabah, Malaysia, for work on energy-price volatility and equity and debt markets.</p></div>
+    </article>
+    <article class="award">
+      <button type="button" data-lb="img/wiley.jpg" data-cap="Wiley Top Cited Article 2022–2023, Sustainable Development"><img src="img/wiley.jpg" alt="Wiley Top Cited Article 2022–2023 certificate"></button>
+      <div class="cap"><div class="yr">2022–23</div><h3>Wiley Top Cited Article</h3><p><i>Sustainable Development</i>, for the paper on green innovation, financial globalisation and the UK energy transition.</p></div>
+    </article>
+    <article class="award">
+      <button type="button" data-lb="img/scholar-award.jpg" data-cap="PhD Scholar Award recognition, Nanjing University, October 2025"><img src="img/scholar-award.jpg" alt="PhD Scholar Award recognition displayed on screen"></button>
+      <div class="cap"><div class="yr">2025</div><h3>PhD Scholar Award</h3><p>China–Southeast Asia Kerry Young Scientists Forum, Nanjing University Business School (fully funded).</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="talks" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Talks</div><h2>Conferences and invited presentations</h2></div>
+  <div class="body-col talks">
+    <div class="talk-photos">
+      <button type="button" class="wide" data-lb="img/carec-almaty.jpg" data-cap="Presenting CTTN research at the 8th CAREC Think Tank Development Forum, Almaty, 2024"><img src="img/carec-almaty.jpg" alt="Ummara Razi presenting at the CAREC Think Tank Development Forum in Almaty"></button>
+      <button type="button" data-lb="img/nanjing.jpg" data-cap="PhD scholars' presentation, Nanjing University Business School, October 2025"><img src="img/nanjing.jpg" alt="Receiving recognition at Nanjing University Business School"></button>
+      <button type="button" data-lb="img/resilnat.jpg" data-cap="RESILNAT-3C, Institute of National Economy, Romania, 2023"><img src="img/resilnat.jpg" alt="Title slide of a presentation at RESILNAT-3C"></button>
+    </div>
+    <ol class="timeline">
+      <li><div class="yr">Oct 2025</div><b>China–Malaysia International Conference on Industrial Innovation and Shared Prosperity</b><span>Nanjing University Business School, China · fully funded</span></li>
+      <li><div class="yr">Aug 2024</div><b>8th CAREC Think Tank Development Forum</b><span>Almaty, Kazakhstan · CTTN grant presentation</span></li>
+      <li><div class="yr">2023</div><b>CAREC Institute Research Conference on Inclusive Green Growth and Sustainability</b><span>Presenter</span></li>
+      <li><div class="yr">2023</div><b>International Conference RESILNAT-3C</b><span>Institute of National Economy, Romania</span></li>
+      <li><div class="yr">2023</div><b>4th International Conference on Economics (ICE)</b><span>Sabah, Malaysia · Best Paper Award</span></li>
+      <li><div class="yr">2023</div><b>Cross-Disciplinary Postgraduate Research for SDG Symposium</b><span>Malaysia</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="teaching" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Teaching &amp; service</div><h2>Classroom and journal service</h2></div>
+  <div class="body-col two">
+    <div class="panel">
+      <h3>Student evaluations</h3>
+      <p class="sub">Official anonymous course surveys, Bahçeşehir Cyprus University, 5-point scale</p>
+      <div class="evals" id="evals"></div>
+      <div class="courses"><b>Courses taught:</b> Industrial Economics, Analysis of Financial Statements, Macroeconomics, Research Methodology, Economics, Corporate Finance.<br><b>Can also teach:</b> Energy and Environmental Economics, Sustainable Finance, Econometrics, Quantitative Methods.</div>
+    </div>
+    <div class="panel">
+      <h3>Peer review</h3>
+      <p class="sub">90 completed reviews for 25 journals, Jan 2022 to Sep 2026. Verified review record.</p>
+      <ul class="journals" id="journals"></ul>
+      <p class="note">Also a recognised reviewer for Applied Energy, Energy Economics, Journal of Environmental Management and other Elsevier journals.</p>
+    </div>
+  </div>
+</section>
+
+<section id="training" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Training</div><h2>Professional training and certificates</h2></div>
+  <div class="body-col train">
+    <div><span class="yr">Sep 2024</span><p><b>Quantitative Tools for Economic and Policy Research</b><span>Asian Development Bank Institute (ADBI), Tokyo (virtual)</span></p></div>
+    <div><span class="yr">Sep 2024</span><p><b>Financial Globalization, Capital Flows and the Global Financial Cycle</b><span>Asian Development Bank Institute (ADBI)</span></p></div>
+    <div><span class="yr">Jul 2024</span><p><b>Energy Economics, Environment and Policy</b><span>Asian Development Bank Institute (ADBI)</span></p></div>
+    <div><span class="yr">2023</span><p><b>Social and Behavioral Research</b><span>CITI Program, research ethics certification</span></p></div>
+  </div>
+</section>
+
+<section id="career" class="wrap">
+  <div class="sec-head"><div class="eyebrow">Career</div><h2>Academic and banking experience</h2></div>
+  <div class="body-col career">
+    <div>
+      <h3>Academic</h3>
+      <ol>
+        <li><span class="yr">2026–</span><p>Non-Resident Research Fellow<span>Institute of Energy Policy and Research, UNITEN, Malaysia</span></p></li>
+        <li><span class="yr">2025–</span><p>Assistant Professor &amp; Research Fellow (remote)<span>Bahçeşehir Cyprus University</span></p></li>
+        <li><span class="yr">2023–2025</span><p>Graduate Research Assistant<span>Sunway University, Malaysia (FRGS project)</span></p></li>
+        <li><span class="yr">2022–2026</span><p>Lecturer &amp; Research Associate<span>ILMA University, Karachi</span></p></li>
+      </ol>
+    </div>
+    <div>
+      <h3>Banking</h3>
+      <ol>
+        <li><span class="yr">2009–2012</span><p>Assistant Foreign Trade Manager<span>Summit Bank, Karachi</span></p></li>
+        <li><span class="yr">2008–2009</span><p>Branch Operations Manager<span>MyBank Ltd., Karachi</span></p></li>
+        <li><span class="yr">2006–2008</span><p>Counter Service Supervisor &amp; Consumer Credit Officer<span>PICIC Commercial Bank Ltd.</span></p></li>
+        <li><span class="yr">2004–2006</span><p>Officer, Systems &amp; Operations<span>PICIC Commercial Bank Ltd., Head Office</span></p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+</main>
+
+<section id="contact" class="contact" style="padding-block:0">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">Collaborate</div>
+      <h2 style="margin-top:10px">Let's work on the <em>energy transition</em> together</h2>
+      <p>I welcome conversations with universities, research centres and policy institutes.</p>
+      <ul class="open">
+        <li>Co-authored research and joint grant applications</li>
+        <li>Visiting and non-resident fellowships</li>
+        <li>Policy research on energy, climate finance and emission trading</li>
+        <li>Econometrics workshops, invited talks and PhD supervision</li>
+      </ul>
+    </div>
+    <div>
+      <div class="clabel">Email</div>
+      <div class="mail"><code id="email">raziummara@gmail.com</code><button type="button" id="copy">Copy</button></div>
+      <div class="clabel">Profiles</div>
+      <div class="profiles">
+        <a href="https://scholar.google.com/citations?user=3RthPUsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57224398188" target="_blank" rel="noopener">Scopus 57224398188</a>
+        <a href="https://orcid.org/0000-0002-5981-5736" target="_blank" rel="noopener">ORCID 0000-0002-5981-5736</a>
+        <a href="https://www.linkedin.com/in/ummara-razi-45919752/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="clabel">Affiliation</div>
+      <p class="addr">Institute of Energy Policy and Research, UNITEN Business School, Universiti Tenaga Nasional, 43000 Kajang, Malaysia</p>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Ummara Razi</span><span>Publications and citations from Google Scholar, 14 October 2026</span></div></footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer"><button type="button" id="lb-close">Close</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+
+<script>
+const P=[
+[2026,"Razi, U., Tiwari, S., Bourchid Abdelkader, S., Djafar Henni, M., & Doğan, B.","Navigating green growth: Insights from resource efficiency, eco-innovation, and digital transformation in the N-11 economies","Energy & Environment","10.1177/0958305X261488298","Q1"],
+[2026,"Cheng, J., Vasa, L., Elżbieta, W., Shahzad, U., & Razi, U.","Causal linkages between forestation, health issues, and sustainability dimensions in the United States and China: A climate resilience perspective","Land Degradation & Development","10.1002/ldr.70849","Q1"],
+[2026,"Dingru, L., Razib, M., Razi, U., & Ramzan, M.","Up in the air: Does air pollution deter air tourism in China? Macro-level evidence considering strong non-linearity and risk factors","Transport Policy","10.1016/j.tranpol.2026.104349","Q1"],
+[2026,"Ramzan, M., Razi, U., Subhan, M., & Adebayo, T. S.","Strengthening well-being under environmental and energy stress: The role of governance quality and economic freedom in advancing SDG 3","Sustainable Development","10.1002/sd.71505","Q1",1],
+[2026,"Li, S., Razi, U., Almugren, H., Zhang, L., & Galgotia, A.","Exploring the impact of AI investments on waste management and mitigation from the lens of sustainable circular economy","Technological Forecasting and Social Change","10.1016/j.techfore.2025.124468","Q1",1],
+[2026,"Razi, U., Ahali, A. Y., & Bilan, Y.","Decoding the nexus: Energy poverty, digital economy, and efficient resource management","Energy Strategy Reviews","10.1016/j.esr.2025.102033","Q1",1],
+[2026,"Razi, U., Cheong, C. W. H., Sharif, A., & Afshan, S.","From crude to green: Exploring energy indicators and sustainability nexus through wavelet quantile correlation","Energy","10.1016/j.energy.2026.140223","Q1",1],
+[2026,"Dongming, W., Razi, U., Bashir, M. A., Shanshan, M., & Adnan, M.","Reward and punishment mechanism reform for ecological compensation and energy consumption structure transformation","Economic Analysis and Policy","10.1016/j.eap.2026.01.059","Q1"],
+[2026,"Bashir, M. A., Kartal, M. T., Qing, L., Zhong, Z., & Razi, U.","Outward foreign direct investment and green energy penetration: Evidence from Global South economies","International Review of Economics & Finance","10.1016/j.iref.2026.105383","Q1"],
+[2026,"Adebayo, T. S., Razi, U., Usman, O., & Uzun, B.","Clean energy investments in the face of climate change: The synergistic effects of green bonds and energy innovation","Innovation and Green Development","10.1016/j.igd.2026.100337","Q1"],
+[2026,"Bashir, M. A., Qing, L., Sharif, A., Razi, U., & Bashir, M. F.","European environmental sustainability through unraveling the nexus of total energy consumption, value addition, and GHG emissions in agriculture","Energy & Environment","10.1177/0958305X261438604","Q1"],
+[2026,"Satrovic, E., Razi, U., Zafar, M. W., & Radulescu, M.","Interplay of economic complexity and biological capacity in emerging economies: Carbon vs. energy intensity","Energy Sources, Part B: Economics, Planning and Policy","10.1080/15567249.2026.2676194","Q2"],
+[2026,"Ramzan, M., Razi, U., Subhan, M., & Adebayo, T. S.","To invest or not to invest? On the dynamics of fintech, digital currencies and market risks in shaping renewable energy stock performance in European firms","Business Strategy and the Environment","10.1002/bse.70707","Q1",1],
+[2026,"Adebayo, T. S., Razi, U., Staniewski, M. W., Olanrewaju, V. O., Eweade, B. S., & Ozsahin, D. U.","Unpacking the environmental consequences of energy patents: A quantile-based kernel regression perspective","Clean Technologies and Environmental Policy","10.1007/s10098-026-03444-5","Q1"],
+[2025,"Shahzad, U., Tedeschi, M., Razi, U., & Cichoń, D.","Navigating global financial turbulence: The Evergrande collapse and its contagion effect","International Review of Economics & Finance","10.1016/j.iref.2025.104701","Q1"],
+[2025,"Razi, U., Cheong, C. W. H., Shams, S., Sarker, T., Sharif, A., & Afshan, S.","Assessing the turbulence: Wavelet coherence and causality analysis of energy price volatility and exchange rate instability","Energy","10.1016/j.energy.2025.136948","Q1",1],
+[2025,"Adebayo, T. S., Razi, U., Özkan, O., & Syed, Q. R.","Assessing the influence of US–China trade disputes on crude oil and gold prices: A wavelet quantile-on-quantile regression approach","Computational Economics","10.1007/s10614-025-11214-6","Q2"],
+[2025,"Satrovic, E., Razi, U., & Radulescu, M.","From complexity to resilience: Clean innovation reshapes the load capacity curve dynamics","Carbon Balance and Management","10.1186/s13021-025-00336-x","Q1"],
+[2025,"Adebayo, T. S., Razi, U., Uzun, B., Staniewski, M. W., & Olanrewaju, V. O.","Unshielding the effect of financial globalisation and technological innovation on renewable energy consumption: A multivariate wavelet quantile-based approach","Energy & Environment","10.1177/0958305X251385237","Q1"],
+[2025,"Su, X., Razi, U., Zhao, S., Li, W., Gu, X., & Yan, J.","Geopolitical risk and energy markets in China","International Review of Financial Analysis","10.1016/j.irfa.2025.104187","Q1",1],
+[2025,"Razi, U., & Ramzan, M.","Interconnected tides: Analyzing European energy markets dynamics in the post-COVID era","Applied Energy","10.1016/j.apenergy.2025.125803","Q1",1],
+[2025,"Ramzan, M., Hossain, M. R., Eskandari, H., Razi, U., & Adebayo, T. S.","Winding down Spain's looming energy poverty amid green energy transition: Evidence from novel multivariate quantile-on-quantile regression","Energy Economics","10.1016/j.eneco.2025.108436","Q1",1],
+[2025,"Adnan, M., Qing, L., Razi, U., Xi, Z., & Jingting, L.","A green leap forward: Environmental efficiency amidst natural resource and technological shifts","Renewable and Sustainable Energy Reviews","10.1016/j.rser.2025.115686","Q1",1],
+[2025,"Razi, U., Cheong, C. W. H., Afshan, S., & Sharif, A.","The ripple effects of energy price volatility on equity and debt markets: A Morlet wavelet analysis","Eurasian Economic Review","10.1007/s40822-024-00292-w","Q1"],
+[2025,"Qingran, G., Razi, U., Ramzan, M., Cuicui, D., & Vasa, L.","Digital economy and export complexity: Unveiling its role in transforming China's manufacturing industry","Environment, Development and Sustainability","10.1007/s10668-025-06742-y","Q1"],
+[2024,"Ramzan, M., Razi, U., Kanwal, A., & Adebayo, T. S.","An analytical link of disaggregated green energy sources in achieving carbon neutrality in China: A policy-based novel wavelet local multiple correlation analysis","Progress in Nuclear Energy","10.1016/j.pnucene.2023.104986","Q1"],
+[2024,"Bashir, M. A., Qing, L., Dewil, R., Xi, Z., Razi, U., & Jingting, L.","Unpacking the environmental quality through the effects of natural resources, renewable energy consumption, banking development and industrial value addition: Evidence from BRICS countries","Journal of Environmental Management","10.1016/j.jenvman.2024.122058","Q1"],
+[2024,"Sun, A., Işık, C., Razi, U., Xu, H., Yan, J., & Gu, X.","Unravelling complexities: A study on geopolitical dynamics, economic complexity, R&D impact on green innovation in China","Stochastic Environmental Research and Risk Assessment","10.1007/s00477-024-02804-1","Q1"],
+[2024,"Bashir, M. F., Inglesi-Lotz, R., Razi, U., & Shahzad, L.","Economic complexity, greenfield investments, and energy innovation: Policy implications for sustainable development goals in newly industrialised economies","Environmental Science and Pollution Research","10.1007/s11356-024-33433-4","Q1"],
+[2024,"Onwe, J. C., Ridzuan, A. R., Uche, E., Ray, S., Ridwan, M., & Razi, U.","Greening Japan: Harnessing energy efficiency and waste reduction for environmental progress","Sustainable Futures","10.1016/j.sftr.2024.100302","Q1"],
+[2024,"Afshan, S., Leong, K. Y., Najmi, A., Razi, U., Lelchumanan, B., & Cheong, C. W. H.","Fintech advancements for financial resilience: Analysing exchange rates and digital currencies during oil and financial risk","Resources Policy","10.1016/j.resourpol.2023.104432","Q1"],
+[2024,"Razi, U., Karim, S., & Cheong, C. W. H.","From turbulence to resilience: A bibliometric insight into the complex interactions between energy price volatility and green finance","Energy","10.1016/j.energy.2024.131992","Q1"],
+[2024,"Ramzan, M., Razi, U., Usman, M., Sarwar, S., Talan, A., & Mundi, H. S.","Role of nuclear energy, geothermal energy, agriculture, and urbanization in environmental stewardship","Gondwana Research","10.1016/j.gr.2023.08.006","Q1"],
+[2024,"Razi, U., Afshan, S., Cheong, C. W. H., & Sharif, A.","Dynamic connection between energy prices, Malaysia's economic growth, and ecological footprint: An evidence from Morlet wavelet approach","Geological Journal","10.1002/gj.4906","Q2"],
+[2023,"Ramzan, M., Razi, U., Quddoos, M. U., & Adebayo, T. S.","Do green innovation and financial globalization contribute to ecological sustainability and energy transition in the United Kingdom? Policy insights from a bootstrap rolling window approach","Sustainable Development","10.1002/sd.2399","Q1",1],
+[2023,"Afshan, S., Razi, U., Leong, K. Y., Lelchumanan, B., & Cheong, C. W. H.","Navigating the interconnected risks in currency valuation: Unveiling the role of climate policy uncertainty","Environmental Science and Pollution Research","10.1007/s11356-023-30687-2","Q1"],
+[2023,"Ramzan, M., Adebayo, T. S., Iqbal, H. A., Razi, U., & Wong, W. K.","Analyzing the nexus between financial risk and economic risk in India: Evidence through the lens of wavelet coherence and non-parametric approaches","Heliyon","10.1016/j.heliyon.2023.e14180","Q1"],
+[2023,"Wang, Y., Wu, Q., & Razi, U.","Drivers and mitigants of resources consumption in China: Discovering the role of digital finance and environmental regulations","Resources Policy","10.1016/j.resourpol.2022.103180","Q1"],
+[2022,"Fu, Z., Chen, Z., Sharif, A., & Razi, U.","The role of financial stress, oil, gold and natural gas prices on clean energy stocks: Global evidence from extreme quantile approach","Resources Policy","10.1016/j.resourpol.2022.102860","Q1"],
+[2022,"Song, Y., Zhao, P., Chang, H. L., Razi, U., & Dinca, M. S.","Does the COVID-19 pandemic affect the tourism industry in China? Evidence from extreme quantiles approach","Economic Research-Ekonomska Istraživanja","10.1080/1331677X.2021.1941180","Q2"],
+[2022,"Hu, J., Xu, J., Tong, L., & Razi, U.","The dynamic role of film and drama industry, green innovation towards the sustainable environment in China: Fresh insight from NARDL approach","Economic Research-Ekonomska Istraživanja","10.1080/1331677X.2022.2026239","Q2"],
+[2022,"Chen, J., Hu, X., Razi, U., & Rexhepi, G.","The sustainable potential of efficient air-transportation industry and green innovation in realising environmental sustainability in G7 countries","Economic Research-Ekonomska Istraživanja","10.1080/1331677X.2021.2004190","Q2"],
+[2022,"Jiang, C., Zhang, Y., Razi, U., & Kamran, H. W.","The asymmetric effect of COVID-19 outbreak, commodities prices and policy uncertainty on financial development in China: Evidence from QARDL approach","Economic Research-Ekonomska Istraživanja","10.1080/1331677X.2021.1930092","Q2"],
+[2021,"Tao, R., Umar, M., Naseer, A., & Razi, U.","The dynamic effect of eco-innovation and environmental taxes on carbon neutrality target in emerging seven (E7) economies","Journal of Environmental Management","10.1016/j.jenvman.2021.113525","Q1"]
+].map(r=>({c:cites(r[4]),y:r[0],a:r[1],t:r[2],j:r[3],doi:r[4],q:r[5],sel:!!r[6],first:r[1].startsWith("Razi, U.")}));
+
+const C={"tranpol": 0, "sd.71505": 0, "techfore": 15, "esr": 2, "energy.2026": 4, "eap": 7, "iref.2026": 2, "igd": 3, "261438604": 0, "15567249": 0, "bse": 0, "s10098": 0, "iref.2025": 7, "energy.2025": 21, "s10614": 10, "s13021": 8, "251385237": 5, "irfa": 70, "apenergy": 10, "eneco": 11, "rser": 17, "s40822": 9, "s10668": 7, "pnucene": 36, "jenvman.2024": 38, "s00477": 29, "s11356-024": 28, "sftr": 27, "resourpol.2023": 61, "energy.2024": 38, "gj.": 20, "sd.2399": 245, "s11356-023": 30, "heliyon": 24, "103180": 46, "102860": 151, "1941180": 68, "2026239": 49, "2004190": 81, "1930092": 71, "jenvman.2021": 305, "ldr": 0, "261488298": 0};
+const cites=d=>{for(const k in C)if(d.includes(k))return C[k];return 0};
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let filter="sel", q="";
+function renderPubs(){
+  const qq=q.trim().toLowerCase();
+  const rows=P.filter(p=>{
+    if(filter==="sel"&&!p.sel)return false;
+    if(filter==="first"&&!p.first)return false;
+    if(/^\d{4}$/.test(filter)&&p.y!==+filter)return false;
+    if(filter==="older"&&p.y>2023)return false;
+    if(qq&&!(p.t+" "+p.j+" "+p.a).toLowerCase().includes(qq))return false;
+    return true;});
+  if(filter==="cited")rows.sort((a,b)=>b.c-a.c);
+  document.getElementById("pub-count").textContent=`Showing ${rows.length} of ${P.length} articles`;
+  const list=document.getElementById("pub-list");
+  if(!rows.length){list.innerHTML='<p class="empty">No articles match. Try another word or choose All.</p>';return}
+  let html="",yr=null;
+  rows.forEach(p=>{
+    if(filter!=="cited"&&p.y!==yr){yr=p.y;html+=`<div class="pub-year">${yr}</div>`}
+    html+=`<article class="pub"><div style="min-width:0"><div class="t">${esc(p.t)}</div><div class="a">${esc(p.a).replace("Razi, U.","<b>Razi, U.</b>")}</div><div class="j"><i>${esc(p.j)}</i>${filter==="cited"?` · ${p.y}`:''}</div></div><div class="side">${p.sel?'<span class="badge sel">Selected</span>':''}${p.c?`<span class="badge">Cited by ${p.c}</span>`:''}<span class="badge">Scopus ${p.q}</span><a class="doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a></div></article>`;
+  });
+  list.innerHTML=html;
+}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+  filter=b.dataset.f;document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));renderPubs();}));
+document.getElementById("pub-search").addEventListener("input",e=>{
+  q=e.target.value;
+  if(q&&filter==="sel"){filter="all";document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.f==="all"))}
+  renderPubs();});
+renderPubs();
+
+// Peer review by journal (verified review record, Jan 2022 – Sep 2026)
+const J=[["International Review of Economics & Finance",17],["Journal of Environmental Management",12],["Energy Strategy Reviews",9],["Energy Economics",7],["Innovation and Green Development",5],["International Review of Financial Analysis",5],["Resources Policy",5],["Applied Energy",4],["Energy Nexus",3],["Social Sciences & Humanities Open",3]];
+const jmax=J[0][1];
+document.getElementById("journals").innerHTML=J.map(([n,c])=>`<li><span>${esc(n)}</span><span class="c">${c}</span><span class="bar"><i style="width:${c/jmax*100}%"></i></span></li>`).join("")+`<li><span style="color:var(--muted)">15 other journals, incl. Energy Policy, Finance Research Letters, Gondwana Research, Renewable Energy</span><span class="c">20</span></li>`;
+
+// Teaching evaluations
+const E=[
+ {h:"BFN3010 Analysis of Financial Tables",m:"7 of 9 students responded",rows:[["My overall",4.57,"me"],["Faculty average",4.21,"avg"]]},
+ {h:"ECO4011 Industrial Dynamics and Economic Change",m:"Fall 2025–26 · 7 of 8 students responded",rows:[["My overall",4.15,"me"],["University average",4.17,"avg"]]}];
+document.getElementById("evals").innerHTML=E.map(e=>`<div class="eval"><h4>${e.h}</h4><div class="meta">${e.m}</div>${e.rows.map(([l,v,k])=>`<div class="erow"><span>${l}</span><div class="track"><div class="fill" style="width:${v/5*100}%;background:var(--bar-${k})"></div></div><span class="v">${v.toFixed(2)}</span></div>`).join("")}</div>`).join("");
+
+// Copy email
+document.getElementById("copy").addEventListener("click",async e=>{
+  const b=e.currentTarget, t=document.getElementById("email").textContent;
+  try{await navigator.clipboard.writeText(t);b.textContent="Copied"}
+  catch{const r=document.createRange();r.selectNodeContents(document.getElementById("email"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected, press Ctrl+C"}
+  setTimeout(()=>b.textContent="Copy",2200);});
+
+// Lightbox
+const lb=document.getElementById("lb");
+document.querySelectorAll("[data-lb]").forEach(b=>b.addEventListener("click",()=>{
+  document.getElementById("lb-img").src=b.dataset.lb;document.getElementById("lb-img").alt=b.dataset.cap;
+  document.getElementById("lb-cap").textContent=b.dataset.cap;lb.showModal();}));
+document.getElementById("lb-close").addEventListener("click",()=>lb.close());
+lb.addEventListener("click",e=>{if(e.target===lb)lb.close()});
+
+// Highlight current section in the index bar
+const links=[...document.querySelectorAll("nav.index a")];
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id))}}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section, #contact").forEach(s=>io.observe(s));
+</script>
+
+</body></html>
